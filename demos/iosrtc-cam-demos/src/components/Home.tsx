@@ -8,7 +8,7 @@ export const Home: React.FC = () => {
       <nav>
         <ul>
           <li>
-            <Link to="/marker">Marker</Link>
+            <Link to="/basicGetUserMedia">Basic getUserMedia</Link>
           </li>
         </ul>
       </nav>

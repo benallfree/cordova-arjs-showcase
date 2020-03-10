@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.benallfree.cordova.arjs.showcase" version="0.0.1" 
+<widget id="com.benallfree.cordova.arjs.demos.iosrtc" version="0.0.1" 
     xmlns="http://www.w3.org/ns/widgets" 
     xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>AR.js Showcase</name>
+    <name>WebRTC+iosrtc Demos</name>
     <description>
-        AR.js samples running in Cordova
+        WebRTC+iosrtc Demos
     </description>
     <author email="ben@benallfree.com" href="https://github.com/benallfree">
         Ben Allfree

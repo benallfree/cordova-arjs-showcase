@@ -59,9 +59,20 @@ declare type CbFunction = (this: {
   el: HTMLElement
   [key: string]: any
 }) => void
+
 declare let AFRAME: {
   registerComponent: (
     name: string,
     config: { init: CbFunction; [key: string]: CbFunction }
   ) => void
+}
+
+declare interface CordovaPlugins {
+  iosrtc: {
+    registerGlobals: () => void
+  }
+}
+
+declare interface Window {
+  constraints: any
 }
