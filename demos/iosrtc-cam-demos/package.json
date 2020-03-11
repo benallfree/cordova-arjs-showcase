@@ -48,7 +48,8 @@
       "cordova-plugin-iosrtc": {}
     },
     "platforms": [
-      "ios"
+      "ios",
+      "android"
     ]
   }
 }

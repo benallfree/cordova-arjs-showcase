@@ -22,7 +22,7 @@
   "author": "Ben Allfree",
   "license": "ICS",
   "dependencies": {
-    "cordova-add-scripts": "0.0.1",
+    "cordova-android": "^8.1.0",
     "cordova-ios": "^5.1.1",
     "cordova-plugin-file": "^6.0.2",
     "cordova-plugin-iosrtc": "^6.0.9",
@@ -48,11 +48,11 @@
   "cordova": {
     "plugins": {
       "cordova-plugin-whitelist": {},
-      "cordova-plugin-xhr-local-file": {},
       "cordova-plugin-iosrtc": {}
     },
     "platforms": [
-      "ios"
+      "ios",
+      "android"
     ]
   }
 }
