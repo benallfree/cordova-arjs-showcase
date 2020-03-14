@@ -10,6 +10,12 @@ export const Home: React.FC = () => {
           <li>
             <Link to="/basicGetUserMedia">Basic getUserMedia</Link>
           </li>
+          <li>
+            <Link to="/getusermedia-canvas">getUserMedia to canvas</Link>
+          </li>
+          <li>
+            <Link to="/positioning-test">Positioning Test</Link>
+          </li>
         </ul>
       </nav>
     </div>

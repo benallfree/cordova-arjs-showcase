@@ -11,5 +11,6 @@ document.addEventListener('deviceready', () => {
     cordova.plugins.iosrtc.registerGlobals()
   }
 
+  localStorage.debug = '*'
   ReactDOM.render(<Root />, document.getElementById('root'))
 })

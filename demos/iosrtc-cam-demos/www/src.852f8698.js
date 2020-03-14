@@ -4174,7 +4174,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 const Home = () => {
   return _react.default.createElement("div", null, _react.default.createElement("h2", null, "Home"), _react.default.createElement("nav", null, _react.default.createElement("ul", null, _react.default.createElement("li", null, _react.default.createElement(_reactRouterDom.Link, {
     to: "/basicGetUserMedia"
-  }, "Basic getUserMedia")))));
+  }, "Basic getUserMedia")), _react.default.createElement("li", null, _react.default.createElement(_reactRouterDom.Link, {
+    to: "/getusermedia-canvas"
+  }, "getUserMedia to canvas")), _react.default.createElement("li", null, _react.default.createElement(_reactRouterDom.Link, {
+    to: "/positioning-test"
+  }, "Positioning Test")))));
 };
 
 exports.Home = Home;
@@ -4312,6 +4316,8 @@ function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 const BasicGetUserMedia = React.lazy(() => require("_bundle_loader")(require.resolve('./demos/BasicGetUserMedia')));
+const GetUserMediaCanvas = React.lazy(() => require("_bundle_loader")(require.resolve('./demos/GetUserMediaCanvas')));
+const PositioningTest = React.lazy(() => require("_bundle_loader")(require.resolve('./demos/PositioningTest')));
 
 const Root = () => {
   return React.createElement(React.Suspense, {
@@ -4319,12 +4325,16 @@ const Root = () => {
   }, React.createElement(_reactRouterDom.HashRouter, null, React.createElement(_reactRouterDom.Switch, null, React.createElement(_reactRouterDom.Route, {
     path: "/basicGetUserMedia"
   }, React.createElement(BasicGetUserMedia, null)), React.createElement(_reactRouterDom.Route, {
+    path: "/getusermedia-canvas"
+  }, React.createElement(GetUserMediaCanvas, null)), React.createElement(_reactRouterDom.Route, {
+    path: "/positioning-test"
+  }, React.createElement(PositioningTest, null)), React.createElement(_reactRouterDom.Route, {
     path: "/"
   }, React.createElement(_Home.Home, null)))));
 };
 
 exports.Root = Root;
-},{"react":"n8MK","react-router-dom":"uc19","./Home":"l3PF","_bundle_loader":"TUK3","./demos/BasicGetUserMedia":[["BasicGetUserMedia.2bab3a7b.js","PJcN"],"BasicGetUserMedia.2bab3a7b.js.map","PJcN"]}],"zo2T":[function(require,module,exports) {
+},{"react":"n8MK","react-router-dom":"uc19","./Home":"l3PF","_bundle_loader":"TUK3","./demos/BasicGetUserMedia":[["BasicGetUserMedia.2bab3a7b.js","PJcN"],"BasicGetUserMedia.2bab3a7b.js.map","PJcN"],"./demos/GetUserMediaCanvas":[["GetUserMediaCanvas.a29ac7f9.js","SGTj"],"GetUserMediaCanvas.a29ac7f9.js.map","SGTj"],"./demos/PositioningTest":[["PositioningTest.b185406f.js","cn3p"],"PositioningTest.b185406f.js.map","cn3p"]}],"zo2T":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));
@@ -4343,6 +4353,8 @@ document.addEventListener('deviceready', () => {
   if (cordova.platformId === 'ios') {
     cordova.plugins.iosrtc.registerGlobals();
   }
+
+  localStorage.debug = '*';
 
   _reactDom.default.render(_react.default.createElement(_Root.Root, null), document.getElementById('root'));
 });
@@ -4371,4 +4383,4 @@ module.exports = function loadJSBundle(bundle) {
 },{}],0:[function(require,module,exports) {
 var b=require("TUK3");b.register("js",require("Yi9z"));
 },{}]},{},[0,"zo2T"], null)
-//# sourceMappingURL=src.f0e4898d.js.map
+//# sourceMappingURL=src.852f8698.js.map
